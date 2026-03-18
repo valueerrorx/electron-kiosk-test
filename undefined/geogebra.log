@@ -1,0 +1,65 @@
+[2026-03-18 08:44:53.472] [warn]  -------------------
+[2026-03-18 08:44:53.477] [warn]  main: starting Kiosk-Test-App "1.2.0 "
+[2026-03-18 08:44:53.477] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:44:53.477] [info]  main: Logger initialized...
+[2026-03-18 08:45:17.258] [warn]  -------------------
+[2026-03-18 08:45:17.262] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 08:45:17.263] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:45:17.263] [info]  main: Logger initialized...
+[2026-03-18 08:46:16.322] [warn]  -------------------
+[2026-03-18 08:46:16.326] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 08:46:16.326] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:46:16.327] [info]  main: Logger initialized...
+[2026-03-18 08:46:49.086] [warn]  -------------------
+[2026-03-18 08:46:49.091] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 08:46:49.091] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:46:49.092] [info]  main: Logger initialized...
+[2026-03-18 08:48:15.106] [warn]  -------------------
+[2026-03-18 08:48:15.111] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 08:48:15.111] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:48:15.111] [info]  main: Logger initialized...
+[2026-03-18 08:51:05.182] [error] Unhandled TypeError: this.WindowHandler.blurevent is not a function
+    at BrowserWindow.<anonymous> (/home/valueerror/STUFF/DEV/electron-kiosk-test/dist/main/main.cjs:37:322)
+    at BrowserWindow.emit (node:events:513:28)
+[2026-03-18 08:53:02.564] [error] Unhandled TypeError: this.WindowHandler.blurevent is not a function
+    at BrowserWindow.<anonymous> (/home/valueerror/STUFF/DEV/electron-kiosk-test/dist/main/main.cjs:37:322)
+    at BrowserWindow.emit (node:events:513:28)
+[2026-03-18 08:54:09.432] [warn]  -------------------
+[2026-03-18 08:54:09.437] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 08:54:09.437] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:54:09.438] [info]  main: Logger initialized...
+[2026-03-18 08:54:13.730] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:54:15.840] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:54:16.398] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:54:16.668] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:54:21.512] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:55:17.512] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:55:23.901] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:55:27.319] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:55:27.954] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:56:12.701] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:56:15.748] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:56:24.011] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:56:42.668] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:57:00.595] [warn]  -------------------
+[2026-03-18 08:57:00.599] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 08:57:00.600] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:57:00.600] [info]  main: Logger initialized...
+[2026-03-18 08:57:12.590] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:57:14.576] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:57:15.099] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:57:15.473] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:57:15.795] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 08:58:08.539] [warn]  -------------------
+[2026-03-18 08:58:08.543] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 08:58:08.544] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 08:58:08.544] [info]  main: Logger initialized...
+[2026-03-18 09:00:45.964] [warn]  -------------------
+[2026-03-18 09:00:45.969] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 09:00:45.969] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 09:00:45.969] [info]  main: Logger initialized...
+[2026-03-18 09:00:56.696] [info]  windowhandler @ blurevent: student tried to leave exam window
+[2026-03-18 09:01:49.818] [warn]  -------------------
+[2026-03-18 09:01:49.823] [warn]  main: starting Kiosk-Test-App "1.0.0 "
+[2026-03-18 09:01:49.823] [info]  main: Logfile: undefined/geogebra.log
+[2026-03-18 09:01:49.823] [info]  main: Logger initialized...
