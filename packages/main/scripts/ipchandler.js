@@ -17,6 +17,7 @@ class IpcHandler {
          */ 
         ipcMain.handle('kioskmode', (event, state=true) => {   
             if (state) {
+                this.WindowHandler.mainwindow.setAlwaysOnTop(true, "screen-saver", 1) 
                 this.WindowHandler.mainwindow.setKiosk(true);
                 this.WindowHandler.mainwindow.addListener('blur', () => this.WindowHandler.blurevent()) 
                 this.WindowHandler.mainwindow.kiosk = true

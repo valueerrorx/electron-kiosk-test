@@ -65,6 +65,7 @@ class WindowHandler {
             this.mainwindow.show()
             this.mainwindow.focus();
             this.mainwindow.moveTop();
+            
         })
 
         this.mainwindow.on('close', async  (e) => {
