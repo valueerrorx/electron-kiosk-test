@@ -37,8 +37,7 @@
             "target": [
                 "AppImage",
                 "deb"
-              ],
-    
+            ],
             "category": "Utility",
             "icon": "public/icons/256x256.png",
             "artifactName": "${productName}_${version}.${ext}"
@@ -76,25 +75,23 @@
                 }
             ],
             "artifactName": "${productName}_${version}.${ext}",
-            "certificateSubjectName": "OSOS Austria",
-            "signingHashAlgorithms": [
-                "sha256"
-            ]
+            "signtoolOptions": {
+                "certificateSubjectName": "OSOS Austria"
+            }
         }
     },
     "engines": {
-        "node": "22.19.0"
+        "node": ">=25.8.1"
     },
     "devDependencies": {
-        "@vitejs/plugin-vue": "^2.3.4",
-        "electron": "^24.1.2",
-        "electron-builder": "^24.2.1",
+        "@vitejs/plugin-vue": "^6.0.5",
+        "dotenv": "^17.3.1",
+        "electron": "^41.0.3",
+        "electron-builder": "^26.8.1",
         "electron-notarize": "^1.2.2",
-        "nodemon": "^2.0.15",
-        "typescript": "^4.5.5",
-        "vite": "^2.7.13",
-        "vite-plugin-resolve": "^1.6.1",
-        "vue": "^3.2.31"
+        "typescript": "^5.9.3",
+        "vite": "^8.0.0",
+        "vue": "^3.5.30"
     },
     "env": {
         "//": "Used in build scripts",
@@ -107,28 +104,10 @@
         "rollup"
     ],
     "dependencies": {
-        "archiver": "^5.3.0",
-        "axios": "^0.26.0",
-        "bootstrap": "^5.3.2",
-        "cors": "^2.8.5",
-        "electron-log": "^5.0.1",
-        "esbuild": "^0.19.11",
-        "express": "^4.17.3",
-        "express-fileupload": "^1.3.1",
-        "fs": "^0.0.1-security",
-        "html2pdf-jspdf2": "^0.1.2",
-        "ip": "^1.1.5",
-        "lowlight": "^2.5.0",
-        "moment-timezone": "^0.5.45",
-        "node-addon-api": "^7.0.0",
-        "node-forge": "^1.3.1",
-        "node-gyp": "^10.0.1",
-        "node-notifier": "^10.0.1",
-        "node-prevent-sleep": "^0.0.4",
-        "play-sound": "^1.1.5",
+        "bootstrap": "^5.3.8",
+        "electron-log": "^5.4.3",
         "sass": "1.77.6",
-        "validator": "^13.7.0",
-        "vue-router": "^4.0.13",
-        "vue-sweetalert2": "^5.0.2"
+        "vue-router": "^5.0.3",
+        "vue-sweetalert2": "^5.0.11"
     }
 }

@@ -15,20 +15,24 @@ export default {
     };
   },
   mounted() {
-    ipcRenderer.on('attention', () => {
-      const toolbar = document.getElementById('toolbar');
-      if (toolbar) toolbar.style.backgroundColor = 'red';
-      this.$swal({
-        title: 'Achtung',
-        text: 'Der KioskModus ist aktiv. Bitte bleiben Sie in der Anwendung.',
-        icon: 'warning',
-        showCancelButton: false,
-        confirmButtonText: 'Ok',
+    if (typeof window !== 'undefined' && window.ipcRenderer?.on) {
+      window.ipcRenderer.on('attention', () => {
+        const toolbar = document.getElementById('toolbar');
+        if (toolbar) toolbar.style.backgroundColor = 'red';
+        this.$swal({
+          title: 'Achtung',
+          text: 'Der KioskModus ist aktiv. Bitte bleiben Sie in der Anwendung.',
+          icon: 'warning',
+          showCancelButton: false,
+          confirmButtonText: 'Ok',
+        });
       });
-    });
+    }
   },
   beforeUnmount() {
-    ipcRenderer.removeAllListeners('attention');
+    if (typeof window !== 'undefined' && window.ipcRenderer?.removeAllListeners) {
+      window.ipcRenderer.removeAllListeners('attention');
+    }
   },
   methods: {
     activateKiosk() {
@@ -43,7 +47,7 @@ export default {
         }).then((result) => {
           if (result.isConfirmed) {
             this.kiosk = false;
-            ipcRenderer.invoke('kioskmode', false);
+            window.ipcRenderer?.invoke('kioskmode', false);
           }
         });
       } else {
@@ -55,7 +59,7 @@ export default {
         }).then((result) => {
           if (result.isConfirmed) {
             this.kiosk = true;
-            ipcRenderer.invoke('kioskmode', true);
+            window.ipcRenderer?.invoke('kioskmode', true);
             if (toolbar) toolbar.style.backgroundColor = '#1a4b1c';
           }
         });

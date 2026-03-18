@@ -20,7 +20,11 @@
  * This is the ELECTRON main file that actually opens the electron window
  */
 
-import { app, BrowserWindow, powerSaveBlocker, nativeTheme, globalShortcut} from 'electron'
+import { app, BrowserWindow } from 'electron'
+
+// Fix GPU process crash on Linux (Electron 41+, kernel 6.12+)
+if (process.platform === 'linux') app.disableHardwareAcceleration()
+
 
 if (!app.requestSingleInstanceLock()) {  // allow only one instance of the app per client
     app.quit()

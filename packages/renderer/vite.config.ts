@@ -41,6 +41,7 @@ export default defineConfig({
     },
   },
   server: {
+    host: '127.0.0.1',
     port: pkg.env?.PORT ?? 3001,
   },
 });

@@ -35,12 +35,12 @@ class WindowHandler {
         this.mainwindow = new BrowserWindow({
             title: 'Main window',
             icon: join(__dirname, '../../public/icons/icon.png'),
-            center:true,
+            center: true,
             width: 1000,
             height: 600,
             minWidth: 760,
             minHeight: 600,
-            show: false,
+            show: true,
             webPreferences: {
                 preload: join(__dirname, '../preload/preload.cjs'),
                 spellcheck: false
@@ -62,10 +62,8 @@ class WindowHandler {
         if (this.config.showdevtools) { this.mainwindow.webContents.openDevTools()  } // you don't want this in the final build
 
         this.mainwindow.once('ready-to-show', () => {
-            this.mainwindow.show()
-            this.mainwindow.focus();
-            this.mainwindow.moveTop();
-            
+            this.mainwindow.focus()
+            this.mainwindow.moveTop()
         })
 
         this.mainwindow.on('close', async  (e) => {
